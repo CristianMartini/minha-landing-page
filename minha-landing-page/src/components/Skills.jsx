@@ -3,6 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaGitAlt, FaDocker } from 'react-icons/fa';
 import { SiTailwindcss, SiKotlin, SiNextdotjs, SiAngular, SiLaravel } from 'react-icons/si';
+import { FaUserFriends, FaLightbulb, FaChalkboardTeacher, FaAdjust, FaHandshake, FaClock, FaShieldAlt } from 'react-icons/fa';
 
 const Skills = () => {
   const technicalSkills = [
@@ -21,20 +22,20 @@ const Skills = () => {
   ];
 
   const softSkills = [
-    { name: 'Comunicação Eficaz', icon: <FaReact size={40} color="#6B46C1" /> }, // Substitua por ícones apropriados
-    { name: 'Trabalho em Equipe', icon: <FaReact size={40} color="#6B46C1" /> },
-    { name: 'Liderança', icon: <FaReact size={40} color="#6B46C1" /> },
-    { name: 'Adaptabilidade', icon: <FaReact size={40} color="#6B46C1" /> },
-    { name: 'Resolução de Conflitos', icon: <FaReact size={40} color="#6B46C1" /> },
-    { name: 'Gestão de Tempo', icon: <FaReact size={40} color="#6B46C1" /> },
-    { name: 'Confiabilidade e Respeito', icon: <FaReact size={40} color="#6B46C1" /> },
+    { name: 'Comunicação Eficaz', icon: <FaChalkboardTeacher size={24} /> },
+    { name: 'Trabalho em Equipe', icon: <FaUserFriends size={24} /> },
+    { name: 'Liderança', icon: <FaLightbulb size={24} /> },
+    { name: 'Adaptabilidade', icon: <FaAdjust size={24} /> },
+    { name: 'Resolução de Conflitos', icon: <FaHandshake size={24} /> },
+    { name: 'Gestão de Tempo', icon: <FaClock size={24} /> },
+    { name: 'Confiabilidade e Respeito', icon: <FaShieldAlt size={24} /> },
   ];
 
   return (
-    <section id="skills" className="py-20 bg-gray-100">
+    <section id="skills" className="py-20 bg-gray-100 dark:bg-gray-800">
       <div className="container mx-auto px-4">
         <motion.h2
-          className="text-3xl font-bold text-center mb-8"
+          className="text-3xl font-bold text-center mb-8 text-gray-800 dark:text-gray-200"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
@@ -49,12 +50,12 @@ const Skills = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
           >
-            <h3 className="text-2xl font-semibold mb-4 text-center">Técnicas</h3>
+            <h3 className="text-2xl font-semibold mb-4 text-center text-gray-800 dark:text-gray-200">Técnicas</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               {technicalSkills.map((skill, index) => (
                 <div key={index} className="flex flex-col items-center">
                   {skill.icon}
-                  <p className="mt-2 text-center">{skill.name}</p>
+                  <p className="mt-2 text-center text-gray-800 dark:text-gray-200">{skill.name}</p>
                 </div>
               ))}
             </div>
@@ -65,12 +66,12 @@ const Skills = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
           >
-            <h3 className="text-2xl font-semibold mb-4 text-center">Comportamentais</h3>
+            <h3 className="text-2xl font-semibold mb-4 text-center text-gray-800 dark:text-gray-200">Comportamentais</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {softSkills.map((skill, index) => (
                 <div key={index} className="flex items-center space-x-4">
-                  <div className="text-blue-500">{skill.icon}</div>
-                  <p>{skill.name}</p>
+                  <div className="text-blue-500 dark:text-blue-400">{skill.icon}</div>
+                  <p className="text-gray-800 dark:text-gray-200">{skill.name}</p>
                 </div>
               ))}
             </div>

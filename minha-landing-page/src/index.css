@@ -3,12 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Remover qualquer margem ou padding padrão */
-body, html {
-  margin: 0;
-  padding: 0;
-}
-
 /* Importando fontes */
 @import "@fontsource/montserrat/400.css";
 @import "@fontsource/montserrat/700.css";
@@ -23,17 +17,12 @@ body, html {
   p, li, span, a {
     font-family: 'Roboto', sans-serif;
   }
-}
 
-/* Adicionando transições personalizadas */
-.transition-colors {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.transition-transform {
-  transition-property: transform;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  /* Definindo cores de texto globais para dark mode */
+  body {
+    @apply text-gray-800 dark:text-gray-200;
+  }
+  a {
+    @apply text-blue-500 dark:text-blue-400;
+  }
 }

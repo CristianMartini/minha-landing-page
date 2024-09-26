@@ -12,7 +12,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div>
+    <div className="bg-white dark:bg-gray-900 transition-colors duration-300">
       <Header />
       <main className="mt-16">
         <Hero />

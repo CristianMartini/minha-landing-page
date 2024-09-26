@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <motion.h2
           className="text-3xl font-bold text-center mb-8"
@@ -16,7 +16,7 @@ const About = () => {
         </motion.h2>
         <div className="flex flex-col md:flex-row items-center">
           <motion.img
-            src="/path-to-your-photo.jpg" // Substitua pelo caminho da sua foto
+            src="/assets/images/cristian-photo.jpg" // Substitua pelo caminho da sua foto
             alt="Cristian Martini"
             className="w-48 h-48 rounded-full mb-8 md:mb-0 md:mr-8 object-cover shadow-lg"
             initial={{ opacity: 0, x: -100 }}
