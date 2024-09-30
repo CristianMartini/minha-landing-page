@@ -19,7 +19,7 @@ const Contact = () => {
           Contato
         </motion.h2>
         
-        <div className="flex flex-col lg:flex-row justify-center items-start gap-12">
+        <div className="flex flex-col lg:flex-row lg:flex-wrap justify-center items-start gap-12">
           {/* Formulário de Contato */}
           <motion.form
             className="w-full lg:w-1/2 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
@@ -84,28 +84,28 @@ const Contact = () => {
             {/* Email */}
             <div className="flex items-center space-x-4 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
               <FaEnvelope size={24} className="text-blue-500 dark:text-blue-400" />
-              <a href="mailto:cristianmartini.sp@gmail.com" className="text-lg text-gray-700 dark:text-gray-200 hover:underline">
+              <a href="mailto:cristianmartini.sp@gmail.com" className="text-lg text-gray-700 dark:text-gray-200 hover:underline break-all">
                 cristianmartini.sp@gmail.com
               </a>
             </div>
             {/* Telefone */}
             <div className="flex items-center space-x-4 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
               <FaPhone size={24} className="text-green-500 dark:text-green-400" />
-              <a href="tel:+5511941798931" className="text-lg text-gray-700 dark:text-gray-200 hover:underline">
+              <a href="tel:+5511941798931" className="text-lg text-gray-700 dark:text-gray-200 hover:underline break-all">
                 (11) 94179-8931
               </a>
             </div>
             {/* LinkedIn */}
             <div className="flex items-center space-x-4 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
               <FaLinkedin size={24} className="text-blue-700 dark:text-blue-500" />
-              <a href="https://linkedin.com/in/cristianmartini" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-700 dark:text-gray-200 hover:underline">
+              <a href="https://linkedin.com/in/cristianmartini" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-700 dark:text-gray-200 hover:underline break-all">
                 linkedin.com/in/cristianmartini
               </a>
             </div>
             {/* WhatsApp */}
             <div className="flex items-center space-x-4 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
               <FaWhatsapp size={24} className="text-green-500 dark:text-green-400" />
-              <a href="https://wa.me/5511941798931" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-700 dark:text-gray-200 hover:underline">
+              <a href="https://wa.me/5511941798931" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-700 dark:text-gray-200 hover:underline break-all">
                 WhatsApp
               </a>
             </div>

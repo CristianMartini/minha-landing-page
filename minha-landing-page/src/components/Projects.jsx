@@ -12,7 +12,7 @@ const Projects = () => {
         'Desenvolvimento de uma plataforma de comércio eletrônico completa utilizando o framework Laravel para o back-end e Angular para o front-end.',
       technologies: ['Laravel', 'Angular', 'MySQL', 'GitHub', 'Visual Studio Code'],
       link: 'https://github.com/CristianMartini/ecommerce-laravel',
-      image: '/assets/images/ecommerce-laravel-screenshot.jpg', // Certifique-se de que a imagem existe
+      image: '/assets/images/ecommerce-laravel-screenshot.png', // Certifique-se de que a imagem existe
     },
     {
       title: 'Aplicativo de E-commerce para Android',

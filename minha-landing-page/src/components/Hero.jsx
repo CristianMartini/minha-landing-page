@@ -1,7 +1,7 @@
 // src/components/Hero.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaArrowDown } from 'react-icons/fa';
+
 
 const Hero = () => {
   return (
@@ -60,7 +60,7 @@ const Hero = () => {
         {/* Coluna de Imagem */}
         <div className="w-full md:w-1/2 mb-12 md:mb-0">
           <motion.img
-            src="/assets/images/cristian-photo.jpg" // Substitua pelo caminho da sua foto
+            src="\assets\images\cristian-photo.png" // Substitua pelo caminho da sua foto
             alt="Cristian Martini"
             className="w-64 h-64 mx-auto rounded-full object-cover border-4 border-blue-500 shadow-lg"
             initial={{ opacity: 0, scale: 0.8 }}

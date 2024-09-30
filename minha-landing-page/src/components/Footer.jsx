@@ -1,42 +1,80 @@
 // src/components/Footer.jsx
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { Link } from 'react-scroll';
 
 const Footer = () => {
   return (
-    <footer className="bg-white dark:bg-gray-800 py-6 shadow-inner">
+    <footer className="bg-blue-900 dark:bg-gray-900 text-white py-6 shadow-inner">
       <div className="container mx-auto text-center">
-        <motion.p
+        {/* Navegação Similar à Navbar */}
+        <motion.nav
+          className="flex justify-center space-x-6 mb-6"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          className="text-gray-600 dark:text-gray-300 mb-4"
+        >
+          <Link to="skills" smooth={true} duration={500} className="hover:text-blue-300 cursor-pointer">
+            Habilidades
+          </Link>
+          <Link to="projects" smooth={true} duration={500} className="hover:text-blue-300 cursor-pointer">
+            Projetos
+          </Link>
+          <Link to="about" smooth={true} duration={500} className="hover:text-blue-300 cursor-pointer">
+            Sobre Mim
+          </Link>
+          <Link to="contact" smooth={true} duration={500} className="hover:text-blue-300 cursor-pointer">
+            Contato
+          </Link>
+        </motion.nav>
+
+        {/* Ícones de Redes Sociais */}
+        <motion.div
+          className="flex justify-center space-x-6 mb-6"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
+          <a
+            href="https://github.com/seu-usuario"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-white transition-colors"
+          >
+            <FaGithub size={28} />
+          </a>
+          <a
+            href="https://linkedin.com/in/cristianmartini"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-300 hover:text-blue-400 transition-colors"
+          >
+            <FaLinkedin size={28} />
+          </a>
+        </motion.div>
+
+        {/* Texto de Copyright */}
+        <motion.p
+          className="text-gray-400 mb-4"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
         >
           &copy; 2024 Cristian Martini. Todos os direitos reservados.
         </motion.p>
+
+        {/* Link para Voltar ao Topo */}
         <motion.div
-          className="flex justify-center space-x-4 mb-4"
+          className="text-sm text-gray-400"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors">
-            <FaGithub size={24} />
-          </a>
-          <a href="https://linkedin.com/in/cristianmartini" target="_blank" rel="noopener noreferrer" className="text-blue-700 dark:text-blue-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
-            <FaLinkedin size={24} />
-          </a>
-        </motion.div>
-        <motion.div
-          className="text-sm text-gray-500 dark:text-gray-400"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
-          <a href="#hero" className="hover:underline">
+          <Link to="hero" smooth={true} duration={500} className="hover:underline cursor-pointer">
             Voltar ao Topo
-          </a>
+          </Link>
         </motion.div>
       </div>
     </footer>
