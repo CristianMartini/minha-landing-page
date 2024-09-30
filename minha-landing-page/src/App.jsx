@@ -16,10 +16,11 @@ function App() {
       <Header />
       <main className="mt-16">
         <Hero />
-        <About />
         <Skills />
+       
         <Projects />
-        <Experience />
+        <Experience /> 
+        <About />
         <Education />
         <Contact />
       </main>

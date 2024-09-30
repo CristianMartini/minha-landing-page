@@ -37,19 +37,22 @@ const Header = () => {
 
         {/* Menu de Navegação */}
         <nav className="hidden md:flex space-x-6">
-          <Link to="about" smooth={true} duration={500} className="hover:text-blue-300 cursor-pointer">
-            Sobre Mim
-          </Link>
+          
           <Link to="skills" smooth={true} duration={500} className="hover:text-blue-300 cursor-pointer">
             Habilidades
           </Link>
-          <Link to="projects" smooth={true} duration={500} className="hover:text-blue-300 cursor-pointer">
+           <Link to="projects" smooth={true} duration={500} className="hover:text-blue-300 cursor-pointer">
             Projetos
           </Link>
+          <Link to="about" smooth={true} duration={500} className="hover:text-blue-300 cursor-pointer">
+            Sobre Mim
+          </Link>
+         
           <Link to="contact" smooth={true} duration={500} className="hover:text-blue-300 cursor-pointer">
             Contato
           </Link>
         </nav>
+        
 
         {/* Ícones do Lado Direito */}
         <div className="flex items-center space-x-4">
