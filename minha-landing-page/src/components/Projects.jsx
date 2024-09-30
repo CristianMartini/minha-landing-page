@@ -20,7 +20,7 @@ const Projects = () => {
         'Criação de um aplicativo móvel para e-commerce, permitindo aos usuários navegar e realizar compras diretamente pelo dispositivo Android.',
       technologies: ['Kotlin', 'Node.js', 'Android Studio', 'Firebase'],
       link: 'https://github.com/CristianMartini/ecommerce-android',
-      image: '/assets/images/ecommerce-android-screenshot.jpg', // Certifique-se de que a imagem existe
+      image: '/assets/images/ecommerce-android-screenshot.png', // Certifique-se de que a imagem existe
     },
     {
       title: 'Plataforma Web com React e Next.js',

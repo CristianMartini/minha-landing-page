@@ -17,7 +17,7 @@ const ProjectCard = ({ project }) => {
       <img
         src={project.image}
         alt={project.title}
-        className="w-full h-48 object-cover"
+        className="w-full max-h-80 object-cover"
       />
 
       {/* Conteúdo do Projeto */}
