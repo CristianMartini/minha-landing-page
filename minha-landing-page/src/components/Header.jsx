@@ -1,86 +1,164 @@
 // src/components/Header.jsx
 import React, { useState, useEffect } from 'react';
-import Scrollspy from 'react-scrollspy';
-import { FaLinkedin, FaGithub, FaSun, FaMoon } from 'react-icons/fa';
+import { Link } from 'react-scroll';
+import { FaBars, FaTimes, FaMoon, FaSun, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Header = () => {
+  const [navOpen, setNavOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
 
-  // Persistir a escolha do tema no localStorage
+  // Carregar preferência do modo escuro do localStorage
   useEffect(() => {
-    const storedTheme = localStorage.getItem('darkMode');
-    if (storedTheme === 'true') {
+    const storedTheme = localStorage.getItem('theme');
+    if (storedTheme === 'dark') {
       setDarkMode(true);
       document.documentElement.classList.add('dark');
     }
   }, []);
 
+  const toggleNav = () => setNavOpen(!navOpen);
+
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
     if (!darkMode) {
       document.documentElement.classList.add('dark');
-      localStorage.setItem('darkMode', 'true');
+      localStorage.setItem('theme', 'dark');
     } else {
       document.documentElement.classList.remove('dark');
-      localStorage.setItem('darkMode', 'false');
+      localStorage.setItem('theme', 'light');
     }
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-white dark:bg-gray-800 shadow-md z-50 transition-colors duration-300">
+    <header className="fixed w-full z-50 bg-blue-900 dark:bg-gray-900 text-white shadow-md top-0">
       <div className="container mx-auto flex justify-between items-center p-4">
-        <h1 className="text-2xl font-bold text-gray-800 dark:text-white">Cristian Martini</h1>
-        <nav>
-          <Scrollspy
-            items={['about', 'skills', 'projects', 'experience', 'education', 'contact']}
-            currentClassName="text-blue-500 dark:text-blue-400"
-            className="flex space-x-4"
-            offset={-100}
-          >
-            <li>
-              <a href="#about" className="cursor-pointer hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
-                Sobre Mim
-              </a>
-            </li>
-            <li>
-              <a href="#skills" className="cursor-pointer hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
-                Habilidades
-              </a>
-            </li>
-            <li>
-              <a href="#projects" className="cursor-pointer hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
-                Projetos
-              </a>
-            </li>
-            <li>
-              <a href="#experience" className="cursor-pointer hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
-                Experiência
-              </a>
-            </li>
-            <li>
-              <a href="#education" className="cursor-pointer hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
-                Educação
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className="cursor-pointer hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
-                Contato
-              </a>
-            </li>
-          </Scrollspy>
+        {/* Nome do Site */}
+        <h1 className="text-2xl font-bold">Cristian Martini</h1>
+
+        {/* Menu de Navegação */}
+        <nav className="hidden md:flex space-x-6">
+          <Link to="about" smooth={true} duration={500} className="hover:text-blue-300 cursor-pointer">
+            Sobre Mim
+          </Link>
+          <Link to="skills" smooth={true} duration={500} className="hover:text-blue-300 cursor-pointer">
+            Habilidades
+          </Link>
+          <Link to="projects" smooth={true} duration={500} className="hover:text-blue-300 cursor-pointer">
+            Projetos
+          </Link>
+          <Link to="contact" smooth={true} duration={500} className="hover:text-blue-300 cursor-pointer">
+            Contato
+          </Link>
         </nav>
+
+        {/* Ícones do Lado Direito */}
         <div className="flex items-center space-x-4">
-          <button onClick={toggleDarkMode} className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white transition-colors">
-            {darkMode ? <FaSun size={24} /> : <FaMoon size={24} />}
+          {/* Botões de GitHub e LinkedIn */}
+          <a
+            href="https://github.com/seu-usuario" // Substitua "seu-usuario" pelo seu usuário do GitHub
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-300"
+            aria-label="GitHub"
+          >
+            <FaGithub size={20} />
+          </a>
+          <a
+            href="https://linkedin.com/in/cristianmartini"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-300"
+            aria-label="LinkedIn"
+          >
+            <FaLinkedin size={20} />
+          </a>
+
+          {/* Botão de Modo Escuro */}
+          <button onClick={toggleDarkMode} aria-label="Alternar Modo Escuro">
+            {darkMode ? <FaSun size={20} /> : <FaMoon size={20} />}
           </button>
-          <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors">
-            <FaGithub size={24} />
-          </a>
-          <a href="https://linkedin.com/in/cristianmartini" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-500 transition-colors">
-            <FaLinkedin size={24} />
-          </a>
+
+          {/* Botão do Menu Mobile */}
+          <div className="md:hidden">
+            <button onClick={toggleNav} aria-label="Alternar Navegação">
+              {navOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+            </button>
+          </div>
         </div>
       </div>
+
+      {/* Menu Mobile */}
+      {navOpen && (
+        <nav className="md:hidden bg-blue-900 dark:bg-gray-900">
+          <ul className="flex flex-col items-center space-y-6 py-4">
+            <li>
+              <Link
+                to="about"
+                smooth={true}
+                duration={500}
+                onClick={toggleNav}
+                className="hover:text-blue-300 cursor-pointer"
+              >
+                Sobre Mim
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="skills"
+                smooth={true}
+                duration={500}
+                onClick={toggleNav}
+                className="hover:text-blue-300 cursor-pointer"
+              >
+                Habilidades
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="projects"
+                smooth={true}
+                duration={500}
+                onClick={toggleNav}
+                className="hover:text-blue-300 cursor-pointer"
+              >
+                Projetos
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="contact"
+                smooth={true}
+                duration={500}
+                onClick={toggleNav}
+                className="hover:text-blue-300 cursor-pointer"
+              >
+                Contato
+              </Link>
+            </li>
+            {/* Ícones de GitHub e LinkedIn no Menu Mobile */}
+            <li className="flex space-x-4">
+              <a
+                href="https://github.com/seu-usuario"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-300"
+                aria-label="GitHub"
+              >
+                <FaGithub size={24} />
+              </a>
+              <a
+                href="https://linkedin.com/in/cristianmartini"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-300"
+                aria-label="LinkedIn"
+              >
+                <FaLinkedin size={24} />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      )}
     </header>
   );
 };
