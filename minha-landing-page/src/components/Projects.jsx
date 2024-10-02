@@ -9,8 +9,8 @@ const Projects = () => {
     {
       title: 'E-commerce em Laravel',
       description:
-        'Desenvolvimento de uma plataforma de comércio eletrônico completa utilizando o framework Laravel para o back-end e Angular para o front-end.',
-      technologies: ['Laravel', 'Angular', 'MySQL', 'GitHub', 'Visual Studio Code'],
+        'Desenvolvimento de uma plataforma de comércio eletrônico completa utilizando o framework Laravel .',
+      technologies: ['Laravel', 'Html','Css', 'JavaScript', 'MySQL', 'GitHub', 'Visual Studio Code'],
       link: 'https://github.com/CristianMartini/ecommerce-laravel',
       image: '/assets/images/ecommerce-laravel-screenshot.png', // Certifique-se de que a imagem existe
     },
@@ -18,17 +18,17 @@ const Projects = () => {
       title: 'Aplicativo de E-commerce para Android',
       description:
         'Criação de um aplicativo móvel para e-commerce, permitindo aos usuários navegar e realizar compras diretamente pelo dispositivo Android.',
-      technologies: ['Kotlin', 'Node.js', 'Android Studio', 'Firebase'],
+      technologies: ['Kotlin', 'Node.js', 'Android Studio', 'MySQL'],
       link: 'https://github.com/CristianMartini/ecommerce-android',
       image: '/assets/images/ecommerce-android-screenshot.png', // Certifique-se de que a imagem existe
     },
     {
-      title: 'Plataforma Web com React e Next.js',
+      title: 'Plataforma Grenciamento financeiro',
       description:
-        'Desenvolvimento de uma plataforma web moderna utilizando React para a interface do usuário e Next.js para renderização do lado servidor, hospedada na Azure.',
-      technologies: ['React', 'Next.js', 'Microsoft Azure', 'GitHub'],
+        'Desenvolvimento de uma plataforma de gestao de gasto, desenvolvida usando apis Node,js com autenticaçao de usuario.',
+      technologies: ['Node.js','Html','Css', 'JavaScript',  'GitHub'],
       link: 'https://github.com/CristianMartini/plataforma-react',
-      image: '/assets/images/plataforma-react-screenshot.jpg', // Certifique-se de que a imagem existe
+      image: '/assets/images/plataforma-node.png', // Certifique-se de que a imagem existe
     },
   ];
 
