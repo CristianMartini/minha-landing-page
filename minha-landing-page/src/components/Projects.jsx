@@ -27,7 +27,7 @@ const Projects = () => {
       description:
         'Desenvolvimento de uma plataforma de gestao de gasto, desenvolvida usando apis Node,js com autenticaçao de usuario.',
       technologies: ['Node.js','Html','Css', 'JavaScript',  'GitHub'],
-      link: 'https://github.com/CristianMartini/plataforma-react',
+      link: 'https://github.com/CristianMartini/Gerenciamento-Finaceiro-api-Ado',
       image: '/assets/images/plataforma-node.png', // Certifique-se de que a imagem existe
     },
   ];

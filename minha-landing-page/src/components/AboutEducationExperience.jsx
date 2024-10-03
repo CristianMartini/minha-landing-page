@@ -87,7 +87,7 @@ const AboutEducationExperience = () => {
         {/* Botão de Download do Currículo */}
         <div className="text-center mt-16">
           <motion.a
-            href="/assets/Cristian-Martini-Curriculo.pdf" // Certifique-se de que o caminho está correto
+            href="src\assets\Cristian-Martini-Curriculo.pdf" 
             download
             className="inline-flex items-center bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full transition-colors duration-300 shadow-md"
             whileHover={{ scale: 1.05 }}
