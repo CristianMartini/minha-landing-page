@@ -50,10 +50,6 @@ A Landing Page do Currículo é um site pessoal desenvolvido para apresentar inf
 * Botão para download do currículo em PDF
 
 
-## Demonstração
-
-[Link para a demonstração ao vivo](link_para_sua_landing_page)
-
 
 ## Capturas de Tela
 
@@ -74,7 +70,7 @@ https://github.com/user-attachments/assets/4cba92e5-7514-4ab2-bbed-24843ce60353
 1. Clone o repositório:
 
 ```bash
-git clone [https://github.com/CristianMartini/minha-landing-page](https://github.com/CristianMartini/minha-landing-page)
+git clone [https://github.com/CristianMartini/minha-landing-page]
 
 
 Como Executar o Projeto Localmente
@@ -108,20 +104,26 @@ npm run dev
 
 Abra o navegador e vá para http://localhost:3000 (ou a porta indicada no terminal).
 
-# Como Usar
-Navegação:
+
+
+ * Navegação:
 Utilize o menu fixo no topo para navegar pelas seções do site.
+
 A rolagem suave proporciona uma transição agradável entre as seções.
 Interação:
+
 Passe o mouse sobre os elementos para ver efeitos de hover e animações.
+
 Clique nos links de contato para enviar um e-mail ou iniciar uma conversa no WhatsApp.
 Download do Currículo:
+
 Na seção de Formação Acadêmica e Experiência Profissional, clique no botão "Baixar Currículo" para fazer o download do PDF.
 Como Contribuir
+
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
 
 
-Contato
+## Contato
 E-mail: cristianmartini.sp@gmail.com
 LinkedIn: (https://www.linkedin.com/in/cristianmartinisp/)
 GitHub: (https://github.com/CristianMartini)
