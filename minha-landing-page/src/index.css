@@ -1,39 +1,21 @@
 /* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Remover qualquer margem ou padding padrão */
+/* Estilos base */
+body {
+  @apply font-sans bg-gray-100 text-gray-900;
+}
+
+/* Estilos para o modo escuro */
+.dark body {
+  @apply bg-gray-900 text-gray-100;
+}
+/* Resetar margens e paddings */
 body, html {
   margin: 0;
   padding: 0;
-}
-
-/* Importando fontes */
-@import "@fontsource/montserrat/400.css";
-@import "@fontsource/montserrat/700.css";
-@import "@fontsource/roboto/400.css";
-@import "@fontsource/roboto/700.css";
-
-/* Personalizando fontes no Tailwind */
-@layer base {
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
-  }
-  p, li, span, a {
-    font-family: 'Roboto', sans-serif;
-  }
-}
-
-/* Adicionando transições personalizadas */
-.transition-colors {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.transition-transform {
-  transition-property: transform;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
