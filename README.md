@@ -1,46 +1,80 @@
+# Landing Page do Currículo de Cristian Martini
 
+## Descrição
 
-
-#Landing Page do Currículo de Cristian Martini
-
-##Descrição
 A Landing Page do Currículo é um site pessoal desenvolvido para apresentar informações profissionais, habilidades, projetos e formas de contato de maneira moderna e responsiva. O objetivo é criar uma presença online que destaque seu perfil profissional e permita que recrutadores e interessados conheçam mais sobre você.
 
-Tecnologias Utilizadas
-Front-end:
-React.js
-Tailwind CSS
-Framer Motion (para animações)
-Ferramentas e Bibliotecas:
-Vite (para configuração do projeto)
-React Icons (ícones)
-React Scroll (navegação suave)
-ESLint e Prettier (padronização de código)
-Funcionalidades
-Seções:
-Apresentação (Hero)
-Sobre Mim
-Habilidades
-Projetos
-Formação Acadêmica e Experiência Profissional
-Contato
-Responsividade:
-Layout adaptável para diferentes tamanhos de tela (desktop, tablet, mobile)
-Animações:
-Transições suaves entre seções
-Efeitos de hover e interatividade
-Formulário de Contato:
-Formulário simplificado para envio de mensagens via e-mail
-Link direto para contato via WhatsApp
-Download de Currículo:
-Botão para download do currículo em PDF
-Demonstração
-Link para a demonstração ao vivo
+## Tecnologias Utilizadas
 
-Capturas de Tela
+**Front-end:**
+
+* React.js
+* Tailwind CSS
+* Framer Motion (para animações)
+
+**Ferramentas e Bibliotecas:**
+
+* Vite (para configuração do projeto)
+* React Icons (ícones)
+* React Scroll (navegação suave)
+* ESLint e Prettier (padronização de código)
+
+
+## Funcionalidades
+
+**Seções:**
+
+* Apresentação (Hero)
+* Sobre Mim
+* Habilidades
+* Projetos
+* Formação Acadêmica e Experiência Profissional
+* Contato
+
+**Responsividade:**
+
+* Layout adaptável para diferentes tamanhos de tela (desktop, tablet, mobile)
+
+**Animações:**
+
+* Transições suaves entre seções
+* Efeitos de hover e interatividade
+
+**Formulário de Contato:**
+
+* Formulário simplificado para envio de mensagens via e-mail
+* Link direto para contato via WhatsApp
+
+**Download de Currículo:**
+
+* Botão para download do currículo em PDF
+
+
+## Demonstração
+
+[Link para a demonstração ao vivo](link_para_sua_landing_page)
+
+
+## Capturas de Tela
+
 
 https://github.com/user-attachments/assets/4cba92e5-7514-4ab2-bbed-24843ce60353
 
+
+
+## Como Executar o Projeto Localmente
+
+**Pré-requisitos**
+
+* Node.js instalado (versão 14 ou superior)
+* NPM ou Yarn instalado
+
+**Passos**
+
+1. Clone o repositório:
+
+```bash
+git clone [https://github.com/CristianMartini/minha-landing-page](https://github.com/CristianMartini/minha-landing-page)
 
 
 Como Executar o Projeto Localmente
@@ -63,26 +97,18 @@ Instale as dependências:
 bash
 Copiar código
 npm install
-ou
 
-bash
-Copiar código
-yarn install
-Inicie o servidor de desenvolvimento:
+
 
 bash
 Copiar código
 npm run dev
-ou
 
-bash
-Copiar código
-yarn dev
-Acesse o site:
+
 
 Abra o navegador e vá para http://localhost:3000 (ou a porta indicada no terminal).
 
-Como Usar
+# Como Usar
 Navegação:
 Utilize o menu fixo no topo para navegar pelas seções do site.
 A rolagem suave proporciona uma transição agradável entre as seções.
