@@ -24,12 +24,12 @@ jobs:
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_JOLLY_MOSS_0DC6AF210 }}
-          repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
+          repo_token: ${{ secrets.GITHUB_TOKEN }} # Usado para integrações do GitHub (ex.: comentários em PR)
           action: "upload"
-          ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
-          # Para mais informações sobre as configurações do workflow, visite: https://aka.ms/swaworkflowconfig
-          app_location: "/" # Caminho do código fonte do aplicativo
-          api_location: "" # Caminho do código fonte da API - opcional
+          ###### Configurações do Repositório/Build - Esses valores podem ser configurados para atender aos requisitos do seu aplicativo. ######
+          # Para mais informações sobre as configurações do workflow do Static Web App, visite: https://aka.ms/swaworkflowconfig
+          app_location: "minha-landing-page/minha-landing-page" # Caminho para o código fonte do aplicativo
+          api_location: "" # Caminho para a API - opcional
           output_location: "dist" # Diretório de saída gerado pelo build
           ###### Fim das Configurações do Repositório/Build ######
 
