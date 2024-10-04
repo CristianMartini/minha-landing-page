@@ -54,7 +54,11 @@ A Landing Page do Currículo é um site pessoal desenvolvido para apresentar inf
 ## Capturas de Tela
 
 
-https://github.com/user-attachments/assets/4cba92e5-7514-4ab2-bbed-24843ce60353
+https://github.com/user-attachments/assets/a7371515-6ec0-4db9-86d1-4155cc5fb230
+
+
+
+
 
 
 
