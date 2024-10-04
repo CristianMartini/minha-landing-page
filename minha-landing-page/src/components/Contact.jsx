@@ -98,7 +98,7 @@ const Contact = () => {
             {/* LinkedIn */}
             <div className="flex items-center space-x-4 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
               <FaLinkedin size={24} className="text-blue-700 dark:text-blue-500" />
-              <a href="https://linkedin.com/in/cristianmartini" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-700 dark:text-gray-200 hover:underline break-all">
+              <a href="https://linkedin.com/in/cristianmartinisp" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-700 dark:text-gray-200 hover:underline break-all">
                 linkedin.com/in/cristianmartini
               </a>
             </div>
