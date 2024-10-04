@@ -28,7 +28,7 @@ jobs:
           action: "upload"
           ###### Configurações do Repositório/Build - Esses valores podem ser configurados para atender aos requisitos do seu aplicativo. ######
           # Para mais informações sobre as configurações do workflow do Static Web App, visite: https://aka.ms/swaworkflowconfig
-          app_location: "minha-landing-page/minha-landing-page" # Caminho para o código fonte do aplicativo
+          app_location: "/" # Caminho para o código fonte do aplicativo
           api_location: "" # Caminho para a API - opcional
           output_location: "dist" # Diretório de saída gerado pelo build
           ###### Fim das Configurações do Repositório/Build ######
