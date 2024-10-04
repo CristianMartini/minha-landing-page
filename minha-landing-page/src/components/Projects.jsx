@@ -11,7 +11,7 @@ const Projects = () => {
       description:
         'Desenvolvimento de uma plataforma de comércio eletrônico completa utilizando o framework Laravel .',
       technologies: ['Laravel', 'Html','Css', 'JavaScript', 'MySQL', 'GitHub', 'Visual Studio Code'],
-      link: 'https://github.com/CristianMartini/ecommerce-laravel',
+      link: 'https://github.com/CristianMartini/Projeto-Bravo-PI',
       image: '/assets/images/ecommerce-laravel-screenshot.png', // Certifique-se de que a imagem existe
     },
     {
@@ -19,7 +19,7 @@ const Projects = () => {
       description:
         'Criação de um aplicativo móvel para e-commerce, permitindo aos usuários navegar e realizar compras diretamente pelo dispositivo Android.',
       technologies: ['Kotlin', 'Node.js', 'Android Studio', 'MySQL'],
-      link: 'https://github.com/CristianMartini/ecommerce-android',
+      link: 'https://github.com/CristianMartini/Echo-Viagens-',
       image: '/assets/images/ecommerce-android-screenshot.png', // Certifique-se de que a imagem existe
     },
     {
