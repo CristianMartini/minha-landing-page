@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className="bg-blue-900 dark:bg-gray-900 text-white py-6 shadow-inner">
       <div className="container mx-auto text-center">
-        {/* Navegação Similar à Navbar */}
+       
         <motion.nav
           className="flex justify-center space-x-6 mb-6"
           initial={{ opacity: 0 }}
@@ -38,7 +38,7 @@ const Footer = () => {
           transition={{ duration: 1 }}
         >
           <a
-            href="https://github.com/seu-usuario"
+            href="https://github.com/cristianmartini"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-white transition-colors"
@@ -46,7 +46,7 @@ const Footer = () => {
             <FaGithub size={28} />
           </a>
           <a
-            href="https://linkedin.com/in/cristianmartini"
+            href="https://linkedin.com/in/cristianmartinisp"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-blue-400 transition-colors"

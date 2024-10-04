@@ -68,7 +68,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-16 bg-gradient-to-r from-blue-900 via-blue-700 to-blue-900 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+    <section id="skills"  className="py-20 bg-gradient-to-r from-blue-900 via-blue-700 to-blue-900 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
       <div className="container mx-auto px-4">
         {/* Título da Seção */}
         <motion.h2
